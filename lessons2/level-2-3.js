@@ -15,7 +15,7 @@ function task2(str){
         if (str[i] == 0) {
             counter++;
             if (counter === 3){
-                console.log(i + 1);
+                console.log(i);
                 return
             }
         }
