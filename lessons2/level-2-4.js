@@ -35,10 +35,10 @@ console.log(values);
 Дано число. Выведите в консоль количество четных цифр в этом числе.
 */
 function task3(number){
-    let str = String(number);
+    let sNum = String(number);
     let counter = 0;
-    for (let i = 0; i < str.length; i++){
-        if (+str[i] % 2 === 0){
+    for (let i = 0; i < sNum.length; i++){
+        if (+sNum[i] % 2 === 0){
             counter++;
         }
     }

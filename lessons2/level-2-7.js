@@ -14,7 +14,7 @@ function task1(str){
             newStr = newStr + strings[i] + ' ';
         }
     }
-    return newStr;
+    return newStr.trim();
 }
 
 //№2
@@ -33,12 +33,12 @@ function task2(char){
 //Дано некоторое число, например, такое: 123789
 //Удалите из этого числа все нечетные цифры. В нашем случае получится такой результат: 28
 function task3(number){
-    let str = String(number);
+    let sNum = String(number);
     let newStr ='';
 
-    for (let i = 0; i < str.length; i++){
-        if (+str[i] % 2 === 0) {
-            newStr += str[i];
+    for (let i = 0; i < sNum.length; i++){
+        if (+sNum[i] % 2 === 0) {
+            newStr += sNum[i];
         }
     }
 

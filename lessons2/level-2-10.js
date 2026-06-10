@@ -9,7 +9,6 @@ function task1(str){
         }
     }
 
-    
     if (counter <= 3) {
         return true
     } else {
@@ -36,7 +35,7 @@ function task2(number){
 '!bcde !bcde !bcde' */
 function task3(str){
     let newStr = '';
-    for (let i = 0; i < str.lenght; i++){
+    for (let i = 0; i < str.length; i++){
         if (i === 0) {
             newStr += '!';
         } 
