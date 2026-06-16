@@ -1,0 +1,42 @@
+import { Warrior } from './src/warrior.js';
+import { Mage } from './src/mage.js';
+import { Archer } from './src/archer.js';
+
+const undying = new Warrior('Зомби', 90, 1000000000);
+const lich = new Mage('Лич', 80);
+const wr = new Archer('ВР', 100);
+
+console.group('ЗОМБИ');
+undying .takeDamage(90);
+undying .heal(100);
+undying .levelUp();
+console.groupEnd();
+
+console.group('ВРКА');
+wr.shoot();
+wr.shoot();
+wr.shoot();
+wr.levelUp();
+wr.restock(4);
+wr.shoot();
+console.groupEnd();
+
+console.group('ЛИЧ');
+lich.castSpell(40, 'Щиток');
+lich.castSpell(100, 'Чайник');
+lich.levelUp();
+lich.castSpell(40, 'Щиток');
+lich.castSpell(40, 'Щиток');
+console.groupEnd();
+
+console.group('ОШИБКИ');
+
+undying .name = '';
+lich.health = 300;
+wr.takeDamage(-10);
+undying .heal(-20);
+lich.castSpell(-50, 'Тест');
+wr.restock(-5);
+wr.arrowCount = -10;
+undying .armor = -50;
+console.groupEnd();
