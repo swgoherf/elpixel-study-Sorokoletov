@@ -1,5 +1,9 @@
-import { Hero } from './hero.js';
-class Archer extends Hero {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Archer = void 0;
+const hero_js_1 = require("./hero.js");
+class Archer extends hero_js_1.Hero {
+    _arrowCount;
     constructor(name, health) {
         super(name, health);
         this._arrowCount = 10;
@@ -31,5 +35,5 @@ class Archer extends Hero {
         console.log(`${this.name} пополнил боезапас на ${Math.floor(amount)}! Теперь у него ${this.arrowCount} стрел`);
     }
 }
-export { Archer };
+exports.Archer = Archer;
 //# sourceMappingURL=archer.js.map

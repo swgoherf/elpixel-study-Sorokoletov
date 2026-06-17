@@ -1,5 +1,10 @@
-import { Hero } from './hero.js';
-class Mage extends Hero {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Mage = void 0;
+const hero_js_1 = require("./hero.js");
+class Mage extends hero_js_1.Hero {
+    _mana;
+    _maxMana;
     constructor(name, health) {
         super(name, health);
         this._maxMana = 100;
@@ -37,5 +42,5 @@ class Mage extends Hero {
         console.log('Мана также полностью восстановлена!');
     }
 }
-export { Mage };
+exports.Mage = Mage;
 //# sourceMappingURL=mage.js.map

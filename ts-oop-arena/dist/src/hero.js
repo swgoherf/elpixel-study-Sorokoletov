@@ -1,4 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Hero = void 0;
 class Hero {
+    _name;
+    _health;
+    level;
     constructor(name, health) {
         this.name = name;
         this.health = health;
@@ -71,5 +77,5 @@ class Hero {
         console.log(`Ошибка: ${reason}`);
     }
 }
-export { Hero };
+exports.Hero = Hero;
 //# sourceMappingURL=hero.js.map

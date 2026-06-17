@@ -1,9 +1,11 @@
-import { Warrior } from './src/warrior.js';
-import { Mage } from './src/mage.js';
-import { Archer } from './src/archer.js';
-const undying = new Warrior('Зомби', 90, 1000000000);
-const lich = new Mage('Лич', 80);
-const wr = new Archer('ВР', 100);
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const warrior_js_1 = require("./src/warrior.js");
+const mage_js_1 = require("./src/mage.js");
+const archer_js_1 = require("./src/archer.js");
+const undying = new warrior_js_1.Warrior('Зомби', 90, 1000000000);
+const lich = new mage_js_1.Mage('Лич', 80);
+const wr = new archer_js_1.Archer('ВР', 100);
 console.group('ЗОМБИ');
 undying.takeDamage(90);
 undying.heal(100);

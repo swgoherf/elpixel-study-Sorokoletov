@@ -1,5 +1,9 @@
-import { Hero } from './hero.js';
-class Warrior extends Hero {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Warrior = void 0;
+const hero_js_1 = require("./hero.js");
+class Warrior extends hero_js_1.Hero {
+    _armor;
     constructor(name, health, armor) {
         super(name, health);
         this._armor = 0;
@@ -22,5 +26,5 @@ class Warrior extends Hero {
         super.takeDamage(finalDamage);
     }
 }
-export { Warrior };
+exports.Warrior = Warrior;
 //# sourceMappingURL=warrior.js.map
